@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+div.center {
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+section.topo {
+  width: 100%;
+  height: 769px;
+  color: white;
+  background-color: #0c0e1a;
+  position: relative;
+}
+
+header {
+  position: relative;
+}
+
+div.logo {
+  height: 50px;
+  padding: 10px 20px;
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
+}
+
+div.descricao {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 7%;
+  position: absolute;
+  top: 30%;
+  -webkit-transform: translateY(-30%);
+  -moz-transform: translateY(-30%);
+  transform: translateY(-30%);
+}
+
+div.descricao h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+div.descricao p {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 0;
+  font-size: 20px;
+  color: #606483;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 600;
+}
+
+button {
+  width: 207px;
+  height: 48px;
+  background-color: #4b3ef7;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  transition: 0.6s;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  background-color: #4234f8;
+}
+
+.HERO-TOP {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+div.bottom {
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.HERO-BOTTOM {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.PHONE_CENTER {
+  display: block;
+  padding-left: 120px;
+  width: 680px;
+  height: auto;
+  margin: 60px auto 0px auto;
+  z-index: 1;
+}
+
+/* PRINCIPAL */
+
+main.principal {
+  width: 100%;
+  height: 100%;
+  margin: 480px auto 50px auto;
+}
+
+.ONE_PHONE_LEFT,
+.TWO_PHONE_RIGHT,
+.THREE_PHONE_LEFT,
+.FOUR_PHONE_RIGHT {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* PRINCIPAL */
+
+/* FOOTER  */
+
+footer {
+  width: 100%;
+  height: 586px;
+  background-color: #0c0e1a;
+  color: white;
+  position: relative;
+}
+
+div.direitos {
+  width: 100%;
+  padding: 0 8%;
+  position: absolute;
+  top: 80%;
+  text-align: center;
+  transform: translateY(-80%);
+}
+.FOOTER_BG {
+  width: 100%;
+  position: absolute;
+  top: -55px;
+  left: 0;
+}
+
+/* FOOTER  */
+
+@media screen and (max-width: 769px) {
+  .flex {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .PHONE_CENTER,
+  div.descricao,
+  #PHONELEFT,
+  #PHONERIGHT,
+  #PHONELEFTTHREE,
+  #PHONERIGHTFOUR {
+    width: 100% !important;
+  }
+
+  div.descricao h2 {
+    font-size: 28px;
+  }
+
+  div.descricao p {
+    font-size: 13px;
+  }
+
+  div.descricao h2,
+  div.descricao p {
+    text-align: center !important;
+  }
+
+  .PHONE_CENTER {
+    padding-left: 70px;
+  }
+
+  #PHONELEFT,
+  #PHONERIGHT,
+  #PHONELEFTTHREE,
+  #PHONERIGHTFOUR {
+    margin-bottom: 80px;
+  }
+  #reverse {
+    flex-direction: column-reverse;
+  }
+}
